@@ -1,0 +1,492 @@
+@import url();
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 2px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #222;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Header Section  */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(95, 70, 70);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(0, 0, 0);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* This is section main styling */
+
+#main {
+    background-image: url(images/background\ image.jpg);
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#main h4 {
+    padding-bottom: 15px;
+    color: azure;
+}
+
+#main h1 {
+    color: azure;
+}
+
+#main p {
+    color: azure;
+}
+
+#main button {
+    background-color: rgb(68, 77, 78);
+    color: rgb(255, 255, 255);
+    border: 1;
+    padding: 15px 30px 15px 30px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 20%;
+    margin-top: 10px;
+}
+
+/* This is for feature section */
+
+#feature .fe-box {
+    width: 150px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgb(1, 0, 0);
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 44px rgba(0, 0, 0, 0.5);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(214, 250, 255);
+    display: inline-block;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* This is for product section */
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#product1 .one {
+    width: 25%;
+    min-width: 200px;
+    padding: 5px 5px;
+    border: 1px solid rgb(106, 133, 133);
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(199, 199, 199, 0.5);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .one:hover {
+    box-shadow: 20px 20px 30px rgba(92, 92, 92, 0.5);
+}
+
+#product1 .one img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#product1 .one .description {
+    text-align: center;
+    padding: 2px 0;
+}
+
+#product1 .one .description span {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+#product1 .one .description h5 {
+    padding-top: 7px;
+    color: #ff6565d7;
+    font-size: 14px;
+}
+
+#product1 .one .description i {
+    font-size: 12px;
+    color: rgb(255, 184, 97);
+}
+
+#product1 .one .description h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+#product1 .one .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 246, 208);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* this is for banner styling */
+
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://www.pngmagic.com/product_images/eCommerce-website-banner-background.jpg);
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+}
+
+#banner h4 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: rgb(255, 17, 0);
+}
+
+#banner button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* this is newsletter's styling */
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRYWFhYYFRgYGBUYGBgYGBgYGBgSGBgaGhgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QGhISGjEhGCExNDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0MTQ0NDQ0MTE0MTQ0NDQxODQ0NT80MT8/Mf/AABEIAKYBMAMBIgACEQEDEQH/xAAaAAACAwEBAAAAAAAAAAAAAAADBAECBQAG/8QANhAAAgIBAwIEAwcDBAMBAAAAAQIAEQMEEiExQQUiUWETcYEUMpGhscHwQtHhBkNi8VKCkhX/xAAYAQEBAQEBAAAAAAAAAAAAAAABAAIDBP/EAB4RAQEBAAMAAwEBAAAAAAAAAAABEQIhMRJBURMi/9oADAMBAAIRAxEAPwBHPn+GQRZHFx7FqVYWDFMum319IXDgqd+sc1Wz2+2jLanTkjjg8Q+LALvvGC1GiPrLUjQodoh3fkCTjUDpFPGsRfGdh2sOQR2Ih7UvqMwHXtMrW6ugzL95BuA+UFg0GbqzBlauOefXr0mhpPDwLJFckKbshD6mOSDsXw3WjKm4cGha+hmlh5+feL6DRBbArvXuO0bV9vtM2/jUCwVbAiOHTDg9eIsE85PFGjf09IYPZ4gmPo9FnxvkRfNicmrJBRTdgD8Zt6VSQPbj8IdDRl8yBV3KOp5+sby0yIOUWQJUmuspjTk8dDG8uO0JrkVMkTSZLv0qX2enY/rF0NLx1MMmTyn8ZIFspsjsJGF6JIgM2QluBUVbKekcGnTqSDH9JkNbh/BMRRZE3NHwh5AlVFWxgknpHdGQoNczK1OoJFR7wl7G09+kzSW14uZzrx856LJpd1X/AJhsXha/1dOwlosed0OlIBNXdTY03hZbnoPeA1+U4/IB/wBdo94V4pdKx+RlVAMOmfEz0e3HvC6fxC2BbgrYB9QfWK+IZyXbmh+0Tc80v+YqvVJqlJr2uD8R0nxFABqpneG+U0x57D1mnqNRsAHczJZrIMCn+onv6TI1PiTk/eIjGu1VkmYOqy2YyC06fEW7Ewb5tw5iSGXuawJKTsiGQzweTPfEkyMUYVYvp2FCaGJLm6EIklowKUcmZes1QVhX1mfSZbLFc2qNgfyokfD2dyxdhfSulTSwaHorEmu/f6iayQGdPkBFVxGkUEVM3WP8AAnpYH89Jo43G0N7TNIyY6ifiWVQFY9LriMnMSOBz+0C2h8vB4HNe8Ii2jyM/UbaJrnnbNbAgiunw9/5ccQG40xINmHY0CCe0Ftrm6gNSGZqrydb9ZkmdMpDFSOKBB9T3/aPowNj1EzNMa6G4xhclrMkOMXWXClVvv8A36QGV7MaCB02m+CG49ux9pIgEJJlm0nf1ju2jUvnZRzYAA5J6fWWrGXkw0RJy56WobT6hMoLobFkD3MSfTsb4iKBjyzV0OtC1QszI21xC6frHA9XqnOzddd6mdk8ZdaF9Pzme2rc8EkiL51vmZw6f1esV7PeZ6agqeIkHNwzYzHBp7HlLd+sd0OCns8gczP0iAGz2lsmsO7jgQT0WXMgO41Y7RbWawsZl6e3PMc17hNvrQhh0nq39YmmDdKa3Pul9Jkqa8gQ+n2kS+YCp2qyWQZfSrZowRDIpgQs2c+mF8G4q+n5jqYGn05AuOJn2iRj+79JheJ+JKlgHzc8e81JbR419RlJPtAolnnmeZ0XiGTIwSyLPWjVT02kR1oHkd5qz4rWhhQDtDKakY8didnU0QOvr6TBRqdjoUejcpgxUAL4ES+xO1bmFi+RYv04j2mQjg9oodTXSNpyLio6mGRx0mcQyJLMag9Oa4hsh594NFMTMzkm644942X2A9+DQHWXTKB2k5FBphwf2kmb4XkL2u0jb3I636TZVKFnrAoR17wyZWHU2JWqBstgRnHwL6TslFTQo9iJQI2//j1PI57VUiD4ppGyPjZMjIFosV/qA7UYc6ZGsMd1tdEWK+RnalSD7H+VBIe/pLQeXQp24A6AcAcdgIJ0IO2uw83bn95bHqOn5xlcw54FCRZOp0lCLrioEzZ1GUdhEs6hqqUoxniVfJxD5MfPpO1Ol4BHIMWSGPGCY/psW7iX0ukoEtxHsGoxrx68WIWnGeUUCoY6IEWOsPlxoQChvrdw+FulAE+v+JLHfB2Jx97j6TF1gY2Tc9KuVCaZlJieq0nWuRCKvKbCTHtuxfcwqYhZsVU7IQaE1oL4k7nmQ+ea7YlRAT3/AEmNmdbgjOLLfUy7pzM34tHiFOqkmJ9qtaHpMXUeEb3339OsW0WvJod/1m9hbi52y8Wd0TTYhxwBU0EEVxEGNqZimLnJXSdiYljf0i2ryhVJPaU0+psAg2DDC1UHcymRebEXx57hlhiXCe8IqjtBbozgFmSQwowiniS5F8yQ4qDSUS4RGs0O05XHBElmA5H1kgsecFyOY/jQERIkA3Q/CDGsIujxJHH1HFdJfTIT0Mz0feeZooNpHvImMnYmLqy31/7hMpLX6VxM/FjIa+1wiOZsZHMYwYyRf8qWzZPKBUBi1rKa7SSciHmUTGYPUeIkGh0gk1hHIMQ0M+mWgSwB7iJZs4oKO0V1GpJiL5pSC0zlck8mCV+YAZYfCtxwGEyEQj6s1Q4gM6kRJ3MsR1NQQ1xr7eT1MxhkkM5li1o5Mt94AHnrFg7QiI3UgwQ+p1JI6zOLEmaiaUOCSdvpKrpQBZoy1Ms3LnpDZauLuYh43D4cU5scdpu+HMGWovrHUU1j9ojovElV2Cg1149e9Tt3Yz43SGH3eZT47owLDyn9YfS5QwuGzKGoTDRfazBgxBBPHbidiwEChL/Do/pD425qSBWwZoYXBHMC4FWYLT5lYcGHqaXw40i7VJ6+nziGB4Y5DM1qI3HvJVpUvcuDImFEl2HSCfKJAyc3BGHWwIDUYjx6QrZhVVcJjorX4SSmiwkzQfMgAvtM8FlsA1IsnrItfFkV16bR6xQqq3TE8k/UxN3IFXIGbioYmmH8t9YjqcnpLAeXr9Igz8kRgUfJzzOGQyjoZfFiJilla+sXZeYwR1AkHTGpQUosb0uSjcXbHRlhxEGX1XMVzuCeOJR+YEywDYzDMBFAYQtJH8WMdbjWTULsoCZCZIV3NTNhHbUSofdwIkXhMeepYtdqMZEXGMmPZHBXpEmy1IPC4dAw4dy6+gv9Jq6DGiEhUq+p7wfhWifqx47Cag0jLyK568T0cqyDl1WxSSeBdf2iOm8bJ5ri6jGp8OdwQhABvcDJ0HgfwwQ43XR/A9oT452u1V8WLHkEUaAI4PpRiGbxPIclr0B59xNvU6BHFHtXHuOkV03gd8gkCzwf29oy8fRZSza7UnggbT32noe/EN4PpHV+GLKfyPtN3TaEoK3bvn+kawYlXooHymLyn01IthEdQgxewJCuROdrQ7YwekHsMsj+veFViTVfMwaCZKlGquDccCrXIv8AvJXGnZQPl3MtRLFujuKx85bMoAsCLF7lqHyMxq/yjCY6WJh6lvtBqpILUPXEEcnPHEHkswKXc1Ea3mcouUZ+KlBlNQRzJjpbinxzILlh1lVw314kl11EIdRE8q0ZzdIjRHywLZ4F2lFWMjJlMsuSDFYRHliP4sQq4PKBK/aeKgt9zPaMIAIN3g2yQTPJE/EPGceGw26644IUtYG0OeB1Fk8DvD6DG+3ez72ejSklFHZUHfry3U/gALDpVUsxt3b7zt123worhVHoP1sx9c0ih2apCD1hBmEo+WQK6RF2gDjpG9vHHMBpsIAFeknU6oJV9+BNUlU167yvccGN6nVqgFnnjj8ukDo9GpYuUAZv07Rl9Km7dtBaqv2lcHZfKjuQQKHN3+RjOmwMq1dxhUH5QirxC04X+0gHa3B7e/ylsWW746QOfSh3Un+nkWO5jiY6EOlGbk1ZL7aIFH8fSMYdQehP0hDpFZrI59feXfSruBI5A4MdiyrvkIMMmU1I2Aj1Eo6gdINGEYw6cxRMgAhV1HFVBCu18djIXS2aqQjWZ2TUHtIlsqFZTHl9Y0i7usBqNKV5sV85BzZYIMInk1iL950HzdR+8D/+xgH+4h+R3fpHBrWTCG9oDLhIuJabxvG7bEezz2IBr5xl9VLtdBpkIlxnkFgekA6GIXd7kB4JAYRMd9eIoFskss5sPMPix+stCwwCrJ5iz0IxlsRJwZRVO+d8QwSvRkq9mhFkbG8NtBlExjuZK9eIVqKOsrzG1UmDfARzDUGFMIMRg95EKuSCD0+QbR8hKKqlrYc9vlM3HrCDtoiq6+nzmjjfcJqzEaXMBxLb7MXK1LI49YYWhjnZOB5YHFmEjU5rmToqmzc7JkMFpxfMPkXiQTieHNcXFcSwOsytYANdZNHnyAAgd4BnQdSB8zMPVuRZJJAW+Se1zzSeM5XZVCqu8NtpWBDi9vLGmvjp6xk0WvdajxHEilndVHqTFE8fxbmUEWpAO47eT0AvqeJ4XPr3yo5DEbcSsa4pw6qx45si/wAYNtM77yiM5dcLhgvl37VL0x4u2b8Jv4rXuc3+p0VbBU8MfLbkhfvHjjiZOT/VWVkZ02IqOylm818Wu1RRO4334omZuLw/ImckIWRg+1hRVHyL5rrsG/ISreEpjXa+QW2wgJyRkUkb+ataLD6ynGDa9HpvEcjYQ7lg2wsV5AsA9u19frPGZWZzbeYk2STfJ6z03hWJPh5FVmcs77yw2+cgA0B0HSY2bS+1MOCPWU60cu8ZzLRjAyqjA2OLFfMWGAhyK5ZAa9QRX/zVwYxK4YkWTXb6cewmOXK2eNceM0BNSyuGU2QdwPTp+s9vpc4yIrr0YX8j3H0PE8LqdAyrfDL147fvXM9R4GFQBF+63I5JAeuQL7H9R7wnJXi20FQlwZsdpKPNARZaQjCXyeaSCJlg0DsNwjKe0gsz8VA1Lr7yhFSSn2b1kLiCniHLyjCWrA2hEaCZ5KmSNpkhi8UU1OOQwQzgRV+JIzQWYkmSMYlB7A9JcYVHQV8oNuKqGRrkS+fE3YwIUiNuTcXcnvGVYpizi67x7FRiKY+SbjmI8RohkmukqdxMqJYNMEZYDWIaB68wqyup5Q/STTJ1h+7x2I/T+8879jxYWQvlZyhLIpH3dxA3MRZIsDrPTaweUGu/7TA8Qwl2B3IFA5sf1A8XfDfIkTfDPvwWM/DtR7ChN7ujiywvgp1/5En6SuTUO4VrPKOpWyQSt7uCf/BvyhS2IvW7cz5AO525F9a21971P5RjW5fhOqhQd1sTYXzMwXjat9Stm+hnT+nGeRn437qdLiZtO6c+VgVF1uU0wFnj1i6aQsKFf7i1YLBeGTyrZHmvoJXSeI7mQnabZFKhWbduCm9zXtoMOL/pPbpdsORmei5CONqkttZHIDgE0DQBPceahMf1veNfGNPQ+R3BYFn2vssLyBTMAfMbP/EQuu0wPmr5/wB5neFeEZwcZKouwizfmK7WG3pRHnbjtQno10rd6Ez8rurlJZjzWRCOnSJaguSCe1fz5T1J8HWyQxAPYVX5wg8PQdV3fMzXX45/6/XmgykcdKojpX07y+g0uRWARHI6qQrUP/aqnrdNsT7qKvyUCMPnvvOd4us5ddu05LoC67W/qHH3vb2PWXbGK4gzkktloSGxQpUozweXPAM9zUgH+JLpkiDPOV44NPO4gy8AoJ6QjYjDAspuHTAxk6dAIV89CFJLNpyILG/rDvqYByDFCqb5jK0BEg+0QTagywabzFRyIIPEmzEmoxdVLMWnOtfKGQCZyargcQ2PUSytGzjg3xAy6ZJYTKUXAKhESu0vYkXctOLKJIAkzpFI9pV1JVgOtGvnKnJUlMnpJM7UadypBVyeOOB39R/eZHiPgb5kC+VKa7Y7uKYdieeZ6o5JShck8zj/ANKKG3vkJawx2qB5tytfJPdfzMffwrGWDMC5HTfRA6HgdByAfoJrsbgRjEhQsWlUDhV/CG2VxVQqmpR2ksQq0ZdwDAbuYRHEgC9iCbJCvk7GCK+81EqjgwpT3ijIVkrkizptk73Bu0upsQTNzzAg7oTGlwWVZRHPaaGjOoHWUTk1IyKTF0ejLBraxIAJzt2iiZ+JVs0xjWmTmqBfLcUfNA/HmpxGpyvzKfHgnfmVYxkZM/aII5RFjIjiMB+YYZLiIeXV5WJrIo4h1xgzp0y6LKnvJLmdOglkeQchnToBA1BnHUGTOigsuUmVx6gidOkKaGW4N8xnTpNOx6gycmU9Z06CCOYyBqDOnRFWGaExtzOnRqg2VAYs6Tp0zEEG7GHxYR1kzo0JbJXaL5MkidCKhPkuThnTpu+AzkYV0iRQTp0Iaupg8jSZ0gAeZX4c6dEOYCUOT2nTpJ0oRInRiV2Tik6dKp//2Q==);
+    background-position: 20% 30%;
+    background-size: cover;
+    background-color: #502c2cd7;
+}
+
+#newsletter h4 {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#newsletter p {
+    color: rgb(255, 255, 255);
+}
+
+#newsletter p span {
+    color: rgb(255, 0, 0);
+}
+
+#newsletter input {
+    height: 3rem;
+    width: 60%;
+    font-size: 14px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 10px;
+}
+
+/* footer styling */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 15px;
+}
+
+footer .follow {
+    color: rgb(135, 197, 176);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer .a:hover {
+    color: rgb(244, 190, 120);
+}
+
+footer .copyright {
+    text-align: center;
+    width: 100%;
+}
+
+
+
+@media (max-width:790px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: whitesmoke;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar .active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: rgb(110, 89, 89);
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+        color: rgb(34, 50, 34);
+    }
+
+    #main {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .container {
+        justify-content: center;
+    }
+
+    #product1 .one {
+        margin: 15px;
+    }
+}
